@@ -1,0 +1,301 @@
+/* GENERAL - RESET */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* HEADER */
+
+header{
+    background-color: black;
+    color: white;
+}
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    /* Logo */
+
+header .logo h1{
+    color: #222;
+        background-color: #a79576;
+        width: fit-content;
+        height: 100%;
+}
+
+    /* Menu */
+
+header .menu ul{
+    display: flex;
+}
+
+header .menu ul li{
+    padding: 13px 20px;
+}
+
+
+header .menu ul li:hover {
+    cursor: pointer;
+    background-color: #222;
+}
+
+.current{
+    background-color: #222;
+}
+
+.current a{
+    font-weight: bold;
+    color: #a79576;
+    text-transform: uppercase;
+}
+header .menu ul li:hover a{
+    text-decoration: underline;
+}
+
+
+/* MAIN */
+
+main{
+    padding: 20px;
+}
+.main_container{
+    width: 90%;
+    background-color: #b1a187;
+    border-radius: 5px;
+    padding: 20px 40px;
+}
+
+    /* Resume : Title */
+
+.resume_title{
+    display: flex;
+    gap: 30px;
+}
+
+.resume_title .title_picture{
+    width: 25%;
+    margin-left: 20px;
+}
+
+.resume_title .title_texte{
+    width: 70%;
+    align-self: center;
+}
+
+.resume_title img{
+    height: 200px;
+    width: 150px;
+}
+
+    /* Resume : Different Sections */
+
+.resume_sections{
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.resume_texte h1{
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.left_column{
+    width: 25%;
+}
+.right_column{
+    width: 70%;
+}
+
+.left_column, .right_column{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: fit-content;
+}
+
+    /* Personal info */
+
+.small_section_resume i{
+    color: #b1a187;
+    background-color: #222;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.small_section_resume h2{
+    box-shadow: 0px 1.5px 0px #ead8bb80;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.small_section_resume p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.small_section_resume li{
+    margin-bottom: 10px;
+}
+
+.small_section_resume a {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #d5cec3;
+}
+
+.small_section_resume a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+        /* Right Column EXPERIENCE */
+
+.experience h4{
+    text-decoration: underline;
+    margin: 5px;
+}
+.experience ul{
+    list-style: circle;
+    margin-left: 20px;
+}
+
+
+.experience ul{
+    margin-bottom: 30px;
+}
+
+.experience .linkMoreWorks{
+padding: 10px;
+border-radius: 10px;
+background-color: #a79576;
+font-weight: bold;
+transition: 0.1s ease-in;
+border: 1px solid #222;
+}
+
+.experience .linkMoreWorks:hover {
+    background-color: #c9b490;
+    cursor: pointer;
+    color: #222;
+    text-decoration: none;
+    box-shadow: 0 1 15px rgb(90, 90, 90);
+}
+
+
+        /* Right Column EDUCATION */
+.education span{
+    font-weight: bold;
+}
+
+.education .school{
+    font-style: italic;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    width: 100%;
+}
+
+footer h1{
+    color: #222;
+    margin-bottom: 10px;
+    background-color: #a79576;
+    width: fit-content;
+    border-radius: 5px;
+        padding: 5px;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+.footer_container{
+    padding: 25px 0;
+    width: 90%;
+    display: flex;
+    gap: 40px;
+}
+
+
+    /* FOOTER : Form */
+
+footer .contact{
+    width: 70%;
+}
+footer form{
+    width: 100%;
+}
+
+.form_info{
+    display: flex;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.form_info input{
+    width: 300px;
+    font-size: 20px;
+    height: 40px;
+    padding: 5px 10px;
+}
+
+
+.form_textnsubmit{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form_textnsubmit textarea{
+    height: 150px;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.form_textnsubmit input {
+    width: 200px;
+    margin-top: 20px;
+    font-size: 20px;
+    height: 30px;
+    background-color: #a79576;
+}
+
+.form_textnsubmit input:hover {
+    cursor: pointer;
+    background-color: #cfb890;
+}
