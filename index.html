@@ -169,13 +169,13 @@
             <!-- FOOTER : Form -->
             <div class="contact">
                 <h1>SEND ME A MESSAGE</h1>
-                <form target="_blank" action="./index.php" method="POST">
+                <form target="_blank" action="./form.php" method="POST">
                     <div class="form_info">
-                        <input type="text" placeholder="Name" id="lname" name="name"><br>
-                        <input type="email" placeholder="Email" id="email" name="email"><br>
+                        <input type="text" placeholder="Name" name="name"><br>
+                        <input type="email" placeholder="Email" name="email"><br>
                     </div>
                     <div class="form_textnsubmit">
-                        <textarea name="message" placeholder="Message"></textarea>
+                        <textarea name="message" placeholder="Message" required></textarea>
                         <input type="submit" value="SEND" class="form-btn">
                     </div>
                 </form>
