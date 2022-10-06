@@ -8,7 +8,6 @@
     <title>Ayoub - CAREER</title>
 
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../styles/career.css">
     <script src="https://kit.fontawesome.com/b4ff4a2621.js" crossorigin="anonymous"></script>
 </head>
 
@@ -60,8 +59,13 @@
                     </p>
                 </div>
                 <div class="career_section_image">
-                    <img src="../img/sitePerso.png" alt="image of this website's main page">
-                    <button>Click on my picture to see the CSS code / Click anywhere on the image to see the HTML code</button>
+                    <map name="imageMap">
+                        <area shape="rect" coords="0,163,599,583" href="https://github.com/" alt="upper part of the image" target="_blank">
+                        <area shape="rect" coords="0,0,599,120" href="https://github.com/AY2018/SAE105/blob/main/index.html"
+                            alt="lower part of the image" target="_blank">
+                    </map>
+                    <img src="../img/sitePerso.png" alt="image of this website's main page" usemap="#imageMap">
+                    <button>Click on the top part of the image to see the HTML code <br><br> Click on the bottom part of the image to see the CSS code</button>
                 </div>
                 
                 <!-- Career - Sections -->
@@ -88,7 +92,10 @@
                     </p>
                 </div>
                 <div class="career_section_image">
-                    <img src="../img/footerScreenShot.png" alt="image of this website's form in the footer">
+                    <map name="imageMapPHP">
+                        <area shape="rect" coords="0,0,599,583" href="https://github.com/" alt="all of the image" target="_blank">
+                    </map>
+                    <img src="../img/footerScreenShot.png" alt="image of this website's form in the footer" usemap="#imageMapPHP">
                     <button>Click on the form to see the PHP code</button>
                 </div>
 
@@ -147,6 +154,8 @@
                     <li><a href="./career.html">Career</a></li>
                 </ul>
             </div>
+
+            <!-- FOOTER : Form -->
             <div class="contact">
                 <h1>SEND ME A MESSAGE</h1>
                 <form target="_blank" action="https://formsubmit.co/myriamanik97@gmail.com" method="POST">
