@@ -3,17 +3,13 @@
   <title>réponse du serveur</title>
   </head>
   <body>
-  <?php print "Hello, ";
+  <?php print "bonjour monsieur ";
   print $_POST["name"] ;
-    print "<BR><BR><HR>";
-  print "Your email address: ";
+  print " ";
   print $_POST["email"];
-    print "<BR><BR><HR>";
-  	print " as well as your message";
+  print "<BR><BR><HR>";
   print $_POST["message"];
-  print " Your message have been successfully recorded";
-  
-
+	print " Your message has been sent";
   ?>
   </body>
 </html> 
